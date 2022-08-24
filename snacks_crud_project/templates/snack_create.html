@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %} Create page {% endblock title %}
+
+{% block content %}
+    <h1>Create a snack to the list</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="SAVE">
+    </form>
+
+{% endblock content%}

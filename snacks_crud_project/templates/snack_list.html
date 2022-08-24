@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %} List page {% endblock title %}
+
+{% block content %}
+    {% for snack in object_list %}
+    <div>
+        <a href="{% url 'SnackDetailView' snack.pk%}">Snack {{snack.title}} is purchased by {{snack.purchaser}}.</a>
+    </div>
+    {% endfor %}
+{% endblock content%}

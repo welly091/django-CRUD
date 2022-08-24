@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} Detail page {% endblock title %}
+
+{% block content %}
+    <div>
+        <h2>{{snack.title}}</h2>
+        <p>Purchaser: {{snack.purchaser}}</p>
+        <p>Description : {{snack.description}}</p>
+        <p>Created time: {{snack.created}}</p>
+    </div>
+    <div>
+        <a href="{% url 'SnackUpdateView' snack.pk%}">Update</a>
+        <a href="{% url 'SnackDeleteView' snack.pk%}">Delete</a>
+    </div>
+{% endblock content%}

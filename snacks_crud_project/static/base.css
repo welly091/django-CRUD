@@ -1,0 +1,39 @@
+body{
+    background-color: black;
+}
+
+h1{
+    color: cornflowerblue;
+}
+
+.links{
+    background-color: blanchedalmond;
+    padding: 10px;
+    color: chartreuse;
+}
+
+.links a:link{
+    color:black;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.links a:visited{
+    color:cornflowerblue;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: red;
+}
+
+.list{
+    background-color: aquamarine;
+    Padding: 20px;
+    color: chocolate;
+}
+
+a:hover{
+    color:red
+}

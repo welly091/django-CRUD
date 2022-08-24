@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'base.css' %}" >
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <div class="links">
+        <a href="{% url 'SnackListView' %}">Snacks List</a>
+        <a href="{% url 'SnackCreateView' %}">Create a new snack</a>
+    </div>
+    <div class="list">
+        {% block content %}
+        {% endblock content%}
+    </div>
+</body>
+</html>
