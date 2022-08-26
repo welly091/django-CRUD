@@ -3,14 +3,16 @@
 {% block title %} Detail page {% endblock title %}
 
 {% block content %}
-    <div>
-        <h2>{{snack.title}}</h2>
-        <p>Purchaser: {{snack.purchaser}}</p>
-        <p>Description : {{snack.description}}</p>
-        <p>Created time: {{snack.created}}</p>
-    </div>
-    <div>
-        <a href="{% url 'SnackUpdateView' snack.pk%}">Update</a>
-        <a href="{% url 'SnackDeleteView' snack.pk%}">Delete</a>
+    <div >
+        <h2 class="text-3xl text-amber-200 font-semibold p-2">{{snack.title}}</h2>
+        <p class="text-xl text-amber-200">Purchaser: {{snack.purchaser}}</p>
+        <p class="text-xl text-amber-200">Description : {{snack.description}}</p>
+        <p class="text-xl text-amber-200">Created time: {{snack.created}}</p>
+        <div class="py-6">
+            <a class="p-2 m-3 bg-green-500 rounded-xl " href="{% url 'SnackUpdateView' snack.pk%}">Update</a>
+            <a class="p-2 m-3 bg-red-600 rounded-xl text-emerald-100" href="{% url 'SnackDeleteView' snack.pk%}">Delete</a>
+        </div>
+
+
     </div>
 {% endblock content%}

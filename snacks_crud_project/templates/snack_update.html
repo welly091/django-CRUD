@@ -3,10 +3,11 @@
 {% block title %} update page {% endblock title %}
 
 {% block content %}
-    <h1>Update Page</h1>
-    <form method="POST">
+
+    <form method="POST" class="p-3">
+      <h1 class="text-3xl text-neutral-700">Update Page</h1>
       {% csrf_token %}
       {{ form.as_p }}
-      <input type="submit" value="SAVE">
+      <input class="p-3 m-3 bg-green-300 rounded-xl decoration-4 text-zinc-600 focus:bg-gray-500 focus:text-amber-500" type="submit" value="SAVE">
     </form>
 {% endblock content%}

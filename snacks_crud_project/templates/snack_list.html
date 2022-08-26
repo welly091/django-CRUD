@@ -4,7 +4,7 @@
 
 {% block content %}
     {% for snack in object_list %}
-    <div>
+    <div class="p-4 bg-indigo-400 hover:text-red-400 grid place-content-center ">
         <a href="{% url 'SnackDetailView' snack.pk%}">Snack {{snack.title}} is purchased by {{snack.purchaser}}.</a>
     </div>
     {% endfor %}
