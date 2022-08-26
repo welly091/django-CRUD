@@ -1,19 +1,27 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="{% static 'base.css' %}" >
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>{% block title %}{% endblock title %}</title>
+    <style>
+        label{
+            padding: 20px;
+        }
+        p{
+            padding: 10px;
+        }
+    </style>
 </head>
-<body>
-    <div class="links">
-        <a href="{% url 'SnackListView' %}">Snacks List</a>
-        <a href="{% url 'SnackCreateView' %}">Create a new snack</a>
+<body class="bg-cyan-600">
+    <div class="bg-sky-200 p-4 ">
+        <a class="px-6 text-gray-800 hover:text-red-600" href="{% url 'SnackListView' %}">Snacks List</a>
+        <a class="px-6 text-gray-800 hover:text-red-600" href="{% url 'SnackCreateView' %}">Create a new snack</a>
     </div>
-    <div class="list">
+    <div class="divide-y">
         {% block content %}
         {% endblock content%}
     </div>
+
 </body>
 </html>

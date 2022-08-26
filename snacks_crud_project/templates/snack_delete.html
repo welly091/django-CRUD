@@ -3,10 +3,11 @@
 {% block title %} Delete page {% endblock title %}
 
 {% block content %}
-    <h1>Delete Thing</h1>
+
     <form method="post">
+        <h1 class="text-3xl text-sky-100">Delete Thing</h1>
       {% csrf_token %}
-      <p>Do you really want to delete "{{ thing.name }}"?</p>
-      <input type="submit" value="OK">
+      <p class="text-3xl text-yellow-400">Do you really want to delete "{{ snack.title}}"?</p>
+      <input class="p-2 m-3 bg-red-600 rounded text-emerald-100" type="submit" value="Yes">
     </form>
 {% endblock content%}

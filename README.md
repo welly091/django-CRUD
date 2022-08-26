@@ -1,4 +1,11 @@
-# Lab:27 - Django-CRUD
+# Lab: 29 - Django with Style
+
+## Feature Tasks and Requirements
+- Building upon previous lab, add some styles using the framework [TailwindCSS](https://tailwindcss.com/).
+
+------
+# Lab:28 - Django-CRUD 
+### Date 8/24/2022
 
 Once you start the App, go to http://127.0.0.1:8000/ to see the snacks list.
 ![Demo image](https://i.imgur.com/d1aXCKz.jpg)

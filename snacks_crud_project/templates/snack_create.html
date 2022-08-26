@@ -3,11 +3,12 @@
 {% block title %} Create page {% endblock title %}
 
 {% block content %}
-    <h1>Create a snack to the list</h1>
-    <form method="POST">
+    <form method="POST" class="p-3">
+        <h1 class="text-3xl text-sky-100">Create a snack to the list</h1>
+        <br>
         {% csrf_token %}
         {{form.as_p}}
-        <input type="submit" value="SAVE">
+        <input class="p-3 m-3 bg-green-300 rounded-xl decoration-4 text-zinc-600 focus:bg-gray-200" type="submit" value="SAVE">
     </form>
 
 {% endblock content%}
