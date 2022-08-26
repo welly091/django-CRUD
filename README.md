@@ -3,6 +3,8 @@
 ## Feature Tasks and Requirements
 - Building upon previous lab, add some styles using the framework [TailwindCSS](https://tailwindcss.com/).
 
+![lab29](https://i.imgur.com/WAp8vmu.jpg)
+
 ------
 # Lab:28 - Django-CRUD 
 ### Date 8/24/2022
